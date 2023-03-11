@@ -1,0 +1,129 @@
+:root {
+    --body-bg-color: #faf7fd;
+    --black: black;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+  }
+  
+  body {
+    overflow: hidden;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  html {
+    font-family: "Poppins", sans-serif;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 90vh;
+    height: 90vh;
+    margin-top:30px;
+    margin-bottom:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .tree-container {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height:700px;
+    background: rgba(248, 248, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid black;
+    margin-top:20px;
+    margin-bottom:10px; 
+  }
+ 
+  .tree-container .avatar {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    border-radius: 50%;
+  }
+  
+  .tree-container .avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  .tree-container .instagram-user {
+    margin-top: 30px;
+    color: var(--black);
+    font-size: 27px;
+    font-weight:bold;
+  }
+  
+  .tree-container .links {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px / 100px;
+    cursor: pointer;
+    transition: 0.2s ease-in;  
+  }
+
+  .links .link {
+    margin-top: 16px;
+    width: 325px;
+    border: 2px solid rgba(7, 7, 7, 0.7);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+    padding: 12px 0;
+    transition: ease 0.3s;
+  }
+  
+  .links .link:hover {
+    background-color: rgba(9, 9, 9, 0.7);
+    color: lightgrey;
+    transition: ease 0.8s;
+    transform: scale(1.05); 
+  }
+  
+  .tree-container .socials-container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+  }
+  
+  .social {
+    transform: scale(0.8);
+    transition: ease 0.2s; 
+  }
+  
+   .social:hover {
+    transform: scale(1.0);
+  }
+
+   .social {
+    color: black; 
+  }
+
+  
