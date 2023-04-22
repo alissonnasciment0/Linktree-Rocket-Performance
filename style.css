@@ -8,18 +8,22 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none; 
+    font-family: "inter", sans-serif;
   }
   
   body {
+    
     overflow: hidden;
     background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
+    max-width:100vw;
+    height: 100vh;
     background-size: cover;
     background-position: center;
   }
   
   html {
-    font-family: "Poppins", sans-serif;
+    
     min-height: 30vh;
     display: flex;
     align-items: center;
@@ -27,103 +31,285 @@
   }
 
   .container {
-    width: 90vh;
+    margin:auto;
+    padding-top:9.4vh;
+    max-width: 90vh;
     height: 90vh;
-    margin-top:30px;
-    margin-bottom:30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .container .tree-container {
+  .tree-container {
     display: flex;
     flex-direction: column;  
     align-items: center;
     justify-content: center;
-    width: 450px;
-    height:700px;
-    background: rgba(248, 248, 255, .5);
-    padding: 4rem;
-    border-radius: 10px;
+    width: 95%;
+    height:95%;
+    background: rgb(37,35,38);
+    background: rgb(241,240,242);
+    background: linear-gradient(90deg, rgba(241,240,242,0.3) 0%, rgba(241,240,242,0.7) 50%, rgba(241,240,242,0.3) 100%);
+    border-radius: 1.4vw;
     position: relative;
-    border: 1px solid black;
-    margin-top:20px;
-    margin-bottom:10px; 
+    
+    margin-top:2.3vh;
+    margin-bottom:2.3vh;
+    
   }
  
-  .tree-container .avatar {
-    width: 200px;
-    height: 200px;
+  .avatar {
+    width: 100%;
+    height: 40%;
     display: flex;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
-    border: 2px solid grey;
-    border-radius: 50%;
-  }
-  
-  .tree-container .avatar img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px solid black;
-  }
-  
-  .tree-container .instagram-user {
-    margin-top: 30px;
-    color: var(--black);
-    font-size: 27px;
-    font-weight:bold;
-  }
-  
-  .tree-container .links {
-    margin-top: 17px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 50px / 100px;
-    cursor: pointer;
-    transition: 0.2s ease-in;  
+    padding-bottom:2.3vh;
+    gap:1.15vh;
+    
   }
 
-  .links .link {
-    margin-top: 16px;
-    width: 325px;
-    border: 2px solid rgba(7, 7, 7, 0.7);
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--black);
-    padding: 12px 0;
-    transition: ease 0.3s;
+  
+
+  .socials-container {
+    width:100%;
+    height:auto;
+    display: flex;
+    padding-top:3.53vh;
+    align-items: center;
+    justify-content: center;
+
+
   }
+
+  .avatarlogo {
+    width: 120px ;
+    height: 120px;
+    border-radius:50%;
+    padding:2px;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    
+  }
+
+  
+ 
+  
+  .instagramsub {
+    width: 100%;
+    heigh:auto;
+    font-size:1.1rem;
+    font-weight:700;
+    text-align:center;
+    color:black;
+  }
+ 
+ 
+  
+
+  .links  {
+    display: grid;
+    width: 100%;
+    height:auto;
+    justify-content:center;
+    gap:1.4vh;
+    
+  }
+
+  .link {
+    display:flex;
+    width:18vw;
+    height:4.7vh;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 1.4vw;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--black);
+    align-items: center;
+    justify-content: flex-start;
+    transition: ease 0.3s;
+    padding: 0.35vw 1.4vw 0.35vw 1.4vw;
+    background: white;
+    box-shadow: 0.5vh 1.5vh 3.0vh rgb(0 0 0 / 0.8);
+    
+    
+  }
+
+  .buttontext {
+    display:flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+
+}
+
+  .icon {
+    display:block;
+    width:auto;
+    height:3vh;
+    align-items: center;
+    align-self:center;
+    
+    
+  }
+
   
   .links .link:hover {
-    background-color: rgba(9, 9, 9, 0.7);
-    color: lightgrey;
-    transition: ease 0.8s;
-    transform: scale(1.05); 
+   
+    transition: ease-in-out 0.2s;
+    transform: scale(1.03); 
   }
   
-  .tree-container .socials-container {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
-  }
+  
   
   .social {
+    display: inline-block;
     transform: scale(0.8);
     transition: ease 0.2s; 
+    font-size:1.1rem;
+    font-weight:bold;
+    text-align: center;
+    justify-content: center;
+   
   }
   
    .social:hover {
-    transform: scale(1.0);
+    transform: scale(0.9);
   }
 
    .social {
     color: black; 
   }
 
+  @media (max-width:1400px) {
+
+    .instagramsub {
+      width:auto;
+      heigh:auto;
+      font-size:0.9rem;
+    }
+
+    .link {
+      display:flex;
+      width:20vw;
+      height:4.7vh;
+      font-size: 0.8rem; 
+      border-radius: 5vw;
+    }
+
+    .avatarlogo {
+      
+      width: 100px ;
+      height: 100px;
+      border-radius:50%;
+    }
   
+  }
+
+  @media (max-width:1000px) {
+
+    .instagramsub {
+      width:auto;
+      heigh:auto;
+      font-size:0.9rem;
+    }
+
+    .link {
+      display:flex;
+      width:27vw;
+      height:4.7vh;
+      font-size: 0.8rem; 
+      border-radius: 5vw;
+    }
+
+    .avatarlogo {
+      
+      width: 100px ;
+      height: 100px;
+      border-radius:50%;
+    }
+  
+  }
+
+  @media (max-width:700px) {
+
+    .instagramsub {
+      width:auto;
+      heigh:auto;
+      font-size:0.9rem;
+    }
+
+    .link {
+      display:flex;
+      width:40vw;
+      height:4.7vh;
+      font-size: 0.8rem; 
+      border-radius: 5vw;
+    }
+
+    .avatarlogo {
+      
+      width: 100px ;
+      height: 100px;
+      border-radius:50%;
+    }
+  
+  }
+
+  @media (max-width:500px) {
+
+    .instagramsub {
+      width:auto;
+      heigh:auto;
+      font-size:0.9rem;
+      
+    }
+
+    .link {
+      display:flex;
+      width:50vw;
+      height:4.3vh;
+      font-size: 0.8rem; 
+      border-radius: 5vw;
+    }
+
+    .avatarlogo {
+      
+      width: 100px ;
+      height: 100px;
+      border-radius:50%;
+    }
+  
+  }
+
+  @media (max-width:380px) {
+
+    .instagramsub {
+      width:auto;
+      heigh:auto;
+      font-size:0.8rem;
+    }
+
+    .link {
+      display:flex;
+      width:60vw;
+      height:4.3vh;
+      font-size: 0.8rem; 
+      border-radius: 5vw;
+    }
+
+    .avatarlogo {
+      
+      width: 80px ;
+      height: 80px;
+      border-radius:50%;
+    }
+  
+  }
+
