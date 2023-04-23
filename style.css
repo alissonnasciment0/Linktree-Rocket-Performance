@@ -111,13 +111,16 @@
  
   
 
-  .links  {
-    display: grid;
+  .links li a {
+    display: block;
     width: 100%;
     height:auto;
-    justify-content:center;
-    gap:1.4vh;
-    
+    justify-content:center; 
+  }
+
+  .links {
+    gap:10px;
+    display:grid;
   }
 
   .link {
