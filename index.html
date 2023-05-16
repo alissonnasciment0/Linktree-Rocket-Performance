@@ -6,21 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="./assets /fontawesome-free-6.3.0-desktop/svgs/brands/">
-<link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-desktop/svgs/brands/twitter.svg">
-<link rel="stylesheet" href="./assets /images/Captura de Tela 2023-03-11 às 03.28.00.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets /fontawesome-free-6.3.0-desktop/svgs/brands/">
+  <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-desktop/svgs/brands/twitter.svg">
+  <link rel="stylesheet" href="./assets /images/Captura de Tela 2023-03-11 às 03.28.00.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
   <title>Social Tree / Rocket Performance JP</title>
+
+
+  <style>
+    .hamburger {
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
 
     <div class="tree-container">
+
+      <span class="hamburger">&#9776;</span>
 
       <div class="avatar">
         <img src="./images/logo_fundobranco_130px.png" class="avatarlogo" alt="">
@@ -33,50 +50,92 @@
           MG|PB|SP|RS|PR|BA|SC|DF|RJ</span>
       </div>
 
-      
-
       <div >
         
           <ul class="links">
             <li class="link" >
                 <img src="https://img.icons8.com/material-outlined/24/null/place-marker--v2.png" class="icon" alt="WhatsApp">
                 <a href="https://goo.gl/maps/1oNkT1n23wGAT6J56"  class="buttontext" target="_blank" > Localização</a>
+                <span class="share-icon" style="display: none;">[Ícone de compartilhamento]</span>
             </li>
 
             <li class="link">
                 <img src="https://img.icons8.com/material-outlined/24/null/whatsapp--v2.png" class="icon" alt="WhatsApp">
-                <a href="https://wa.me/message/GEMH5VDJZUUSN1"  class="buttontext" target="_blank" > WhatsApp</a>
-              
-            </li>
-            
-
-            <li class="link">
-                <img src="https://img.icons8.com/windows/50/null/new-post.png" class="icon" alt="Email">
-                <a href="mailto:rocketperformancegarage@gmail.com" class="buttontext" target="_blank" >Email</a> 
-            </li>
-
-            <li class="link">
-                <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/null/external-youtube-social-media-tanah-basah-basic-outline-tanah-basah.png" class="icon" alt="">
-                <a href="https://www.youtube.com/@RocketPerformance" class="buttontext" target="_blank" >YouTube</a>
-            </li>
-
-            <li class="link">
-                <img src="https://img.icons8.com/ios-glyphs/30/null/web.png" class="icon" alt="">
-                <a href="https://www.rocketperformance.com.br/" class="buttontext" target="_blank" >Site</a>
-            </li>
-
-            <li class="link">
-                <img src="https://img.icons8.com/material-outlined/24/null/instagram-new--v2.png" class="icon" alt="">
-                <a href="https://www.instagram.com/rocketperformance/" class="buttontext" target="_blank" >Instagram</a>
-            </li>
-          </ul>
-      </div>
-
-      <div class="socials-container">
-        <a href="mailto:rocketperformancegarage@gmail.com" class="social"> Torne-se revendedor
-        </a>
+                <a href="https://wa.me/message/GEMH5VDJZUUSN1" 
+                class="buttontext" target="_blank" > WhatsApp</a>
+                <span class="share-icon" style="display: none;">[Ícone de compartilhamento]</span>
+                </li>        <li class="link">
+                  <img src="https://img.icons8.com/windows/50/null/new-post.png" class="icon" alt="Email">
+                  <a href="mailto:rocketperformancegarage@gmail.com" class="buttontext" target="_blank" >Email</a> 
+                  <span class="share-icon" style="display: none;">[Ícone de compartilhamento]</span>
+              </li>
+      
+              <li class="link">
+                  <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/null/external-youtube-social-media-tanah-basah-basic-outline-tanah-basah.png" class="icon" alt="">
+                  <a href="https://www.youtube.com/@RocketPerformance" class="buttontext" target="_blank" >YouTube</a>
+                  <span class="share-icon" style="display: none;">[Ícone de compartilhamento]</span>
+              </li>
+      
+              <li class="link">
+                  <img src="https://img.icons8.com/ios-glyphs/30/null/web.png" class="icon" alt="">
+                  <a href="https://www.rocketperformance.com.br/" class="buttontext" target="_blank" >Site</a>
+                  <span class="share-icon" style="display: none;">[Ícone de compartilhamento]</span>
+              </li>
+      
+              <li class="link">
+                  <img src="https://img.icons8.com/material-outlined/24/null/instagram-new--v2.png" class="icon" alt="">
+                  <a href="https://www.instagram.com/rocketperformance/" class="buttontext" target="_blank" >Instagram</a>
+                  <span class="share-icon" style="position: absolute;">[Ícone de compartilhamento]</span>
+              </li>
+            </ul>
+        </div>
+      
+        <div class="socials-container">
+          <a href="mailto:rocketperformancegarage@gmail.com" class="social"> Torne-se revendedor
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
+    <script>
+      $(function() {
+        var startPosition;
+        var lastDragged = null;
+        $(".link").draggable({
+            axis: "x",
+            start: function(event, ui) {
+                startPosition = ui.position.left;
+                $(this).find('.share-icon').show();
+                if (lastDragged !== null && lastDragged != this) {
+                    $(lastDragged).animate({
+                        left: "0"
+                    }, 500); 
+                    $(lastDragged).find('.share-icon').hide();
+                }
+                lastDragged = this;
+            },
+            drag: function(event, ui) {
+                if (ui.position.left > startPosition) {
+                  ui.position.left = startPosition;
+                  return false;
+                }
+            },
+            stop: function(event, ui) {
+                if (ui.position.left >= startPosition) {
+                    $(this).animate({
+                        left: "0"
+                    }, 500); 
+                    $(this).find('.share-icon').hide();
+                }
+            }
+        });
+  
+        $(".hamburger").click(function() {
+          $(".share-icon").toggle();
+        });
+      });
+    </script>
+  
+    
+    
+    </body>
+    </html>      
